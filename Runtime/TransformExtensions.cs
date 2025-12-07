@@ -9,7 +9,7 @@ namespace Burak.TweenKit
         {
             var interp = transform.GetComponent<TransformInterpolation>();
             if (interp is null)
-                interp = transform.AddComponent<TransformInterpolation>();
+                interp = transform.gameObject.AddComponent<TransformInterpolation>();
             
             interp.MoveTo(target, duration, easeMode);
             return interp;
