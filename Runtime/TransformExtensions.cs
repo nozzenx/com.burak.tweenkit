@@ -1,15 +1,18 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public static class TransformExtensions
+namespace Burak.TweenKit
 {
-    public static TransformInterpolation MoveWithInterpolation(this Transform transform, Vector3 target, float duration, EaseMode easeMode = EaseMode.Linear)
+    public static class TransformExtensions
     {
-        var interp = transform.GetComponent<TransformInterpolation>();
-        if (interp is null)
-            interp = transform.AddComponent<TransformInterpolation>();
-        
-        interp.MoveTo(target, duration, easeMode);
-        return interp;
+        public static TransformInterpolation MoveWithInterpolation(this Transform transform, Vector3 target, float duration, EaseMode easeMode = EaseMode.Linear)
+        {
+            var interp = transform.GetComponent<TransformInterpolation>();
+            if (interp is null)
+                interp = transform.AddComponent<TransformInterpolation>();
+            
+            interp.MoveTo(target, duration, easeMode);
+            return interp;
+        }
     }
 }

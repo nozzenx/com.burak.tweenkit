@@ -1,0 +1,7 @@
+{
+  "name": "Burak.TweenKit.Runtime",
+  "rootNamespace": "Burak.TweenKit",
+  "references": [],
+  "includePlatforms": [],
+  "excludePlatforms": []
+}
