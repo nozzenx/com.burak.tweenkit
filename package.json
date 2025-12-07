@@ -1,0 +1,12 @@
+{
+    "name": "com.burak.tweenkit",
+    "version": "1.0.0",
+    "displayName": "TweenKit",
+    "description": "A lightweight tween system for Unity.",
+    "unity": "2021.3",
+    "author": {
+      "name": "Burak"
+    },
+    "keywords": ["tween", "animation", "interpolation", "utilities"],
+    "type": "tool"
+  }
